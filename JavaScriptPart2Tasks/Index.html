@@ -30,6 +30,7 @@
             script.setAttribute('data-height', '50px');
             script.setAttribute('data-position', 'top');
             script.setAttribute('data-message', 'We use cookies! Or do we???');
+            script.setAttribute('data-bg', '#cc00ff');
             document.head.appendChild(script); 
             
             
@@ -45,9 +46,28 @@
             script.type = 'text/javascript';
             script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.min.js';
             script.id = 'merdude';
-            script.setAttribute('data-height', '50px');
-            script.setAttribute('data-position', 'bottom');
-            script.setAttribute('data-message', 'We use cookies! Or do we???');
+            //script.setAttribute('data-height', '50px');
+            //script.setAttribute('data-position', 'bottom');
+            //script.setAttribute('data-message', 'We use cookies! Or do we???');
+            document.head.appendChild(script); 
+            
+            
+            script.onload = function() {
+                console.log('loaded script');
+                // console.log( initCookieConsent );
+            }
+            console.log('ready');
+
+
+            document.body.style.height = '200pt';
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js';
+            script.id = 'map';
+            //script.setAttribute('data-height', '50px');
+            //script.setAttribute('data-position', 'top');
+            //script.setAttribute('data-message', 'We use cookies! Or do we???');
+            //script.setAttribute('data-bg', '#cc00ff');
             document.head.appendChild(script); 
             
             
