@@ -22,12 +22,14 @@ let robotL = new robotMaker("Mark V", "ASW", 1994);
 alert([robotA.model, robotA.make, robotA.manufactureYear]);
 alert([robotL.model, robotL.make, robotL.manufactureYear]);
 
-function () {
-    var  = document.createElement("img");
-    .setAttribute("src", "");
-    .setAttribute("alt", "");
-    var  = document.getElementsByTagName("img")[1];
-    var parent = up.parentNode;
-    parent.removeChild(up);
-    parent.appendChild(minion);
-}
+
+//function () {
+//    var  = document.createElement("img");
+//    .setAttribute("src", "");
+//    .setAttribute("alt", "");
+//    var  = document.getElementsByTagName("img")[1];
+//    var parent = up.parentNode;
+//    parent.removeChild(up);
+//    parent.appendChild(minion);
+//}
+
