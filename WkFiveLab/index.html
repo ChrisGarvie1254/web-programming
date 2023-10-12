@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Stuff will be displayed about fox news</p>
+    <rss version="2.0">
+    <title> Fox News </title>
+    <link> https://moxie.foxnews.com/google-publisher/latest.xml </link>
+     <description>
+        Latest Headlines (world, science, events, ..)
+    </description>
+    
+    <script>
+        let prom = await fetch( 'https://moxie.foxnews.com/google-publisher/latest.xml' );
+        let text = await prom.text();
+
+        console.log( text.substring(0, 100 ) );
+    </script>    
+
+    
+
+</body>
+</html>
