@@ -9,10 +9,32 @@
     <body>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
         <script>
-            $(document).ready(function() {
-                var $div = $(document.createElement('textarea')).appendTo('body');
-                $div.attr('id', 'ta0');
-            });
+           // $(document).ready(function() {
+            //    var $div = $(document.createElement('textarea')).appendTo('body');
+            //    $div.attr('id', 'ta0');
+           // });
         </script>
+        <script>
+            $(document).ready(function() {
+                var $loadbutton = $('<button>Load</button>').appendTo('body');
+                var $savebutton = $('<button>Save</button>').appendTo('body');
+                var $textarea   = $(document.createElement('textarea')).appendTo('body');
+                $textarea.val( 'enter text' );
+
+                $savebutton.click(function() {
+                    console.log( "Handler for .click() called." );
+                });
+                let  json = JSON.stringify($textarea);
+                let blob = new Blob([json], {type: "octet/stream"});
+                let url = window.URL.createObjectURL(blob);
+                let a = document.createElement("a");
+                a.href = url;
+                a.download = 'afile.json';
+                a.click();
+                window.URL.revokeObjectURL(url);
+            });
+
+    
+            </script>
     </body>
 </html>
