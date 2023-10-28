@@ -23,6 +23,21 @@ alert([robotA.model, robotA.make, robotA.manufactureYear]);
 alert([robotL.model, robotL.make, robotL.manufactureYear]);
 
 
+$(document).ready(function(){
+    $("#al").click(function(){
+
+    });
+    $("#lm").click(function(){
+
+    });
+    $("#ma").click(function(){
+
+      });
+  })
+
+
+
+
 //function () {
 //    var  = document.createElement("img");
 //    .setAttribute("src", "");
