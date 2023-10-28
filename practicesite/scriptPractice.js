@@ -23,28 +23,24 @@ alert([robotA.model, robotA.make, robotA.manufactureYear]);
 alert([robotL.model, robotL.make, robotL.manufactureYear]);
 
 
-$(document).ready(function(){
-    $("#al").click(function(){
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 
+
+$(document).ready(function() {
+    $("#al").click(function() {
+        $("#ai").show();
+        $("#la").show();
+        $("#me").hide();
     });
-    $("#lm").click(function(){
-
+    $("#lm").click(function() {
+        $("#la").show();
+        $("#me").show();
+        $("#ai").hide();
     });
-    $("#ma").click(function(){
-
-      });
-  })
-
-
-
-
-//function () {
-//    var  = document.createElement("img");
-//    .setAttribute("src", "");
-//    .setAttribute("alt", "");
-//    var  = document.getElementsByTagName("img")[1];
-//    var parent = up.parentNode;
-//    parent.removeChild(up);
-//    parent.appendChild(minion);
-//}
+    $("#ma").click(function() {
+        $("#ai").show();
+        $("#me").show();
+        $("#la").hide();
+    });
+})
 
