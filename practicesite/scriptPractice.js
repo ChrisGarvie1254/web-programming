@@ -28,17 +28,17 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 
 $(document).ready(function() {
     $("#al").click(function() {
-        $("#ai").show();
+        $("#ae").show();
         $("#la").show();
         $("#me").hide();
     });
     $("#lm").click(function() {
         $("#la").show();
         $("#me").show();
-        $("#ai").hide();
+        $("#ae").hide();
     });
     $("#ma").click(function() {
-        $("#ai").show();
+        $("#ae").show();
         $("#me").show();
         $("#la").hide();
     });
