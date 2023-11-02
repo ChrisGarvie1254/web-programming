@@ -13,8 +13,12 @@ var io = require("socket.io")(server);
 
 // Connection events
 
+var numUsers = 0;
+
 io.on("connection", function (socket) {
   console.log("User connected");
+  numUsers += 1;
+  console.log("There are now " + numUsers + " users online");
   let id = socket.id;
 
   socket.on("cinput", (data) => {
