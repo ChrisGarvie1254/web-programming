@@ -25,5 +25,6 @@ io.on("connection", function (socket) {
     data.id = id;
     socket.emit("sinput", data);
     socket.broadcast.emit("sinput", data);
+    console.log("Movement made");
   });
 });
